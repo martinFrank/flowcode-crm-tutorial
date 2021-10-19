@@ -1,6 +1,6 @@
 FROM openjdk:11
 WORKDIR /
-ADD target/flowcrmtutorial-1.0-SNAPSHOT.jar.jar app.jar
+ADD target/flowcrmtutorial-1.0-SNAPSHOT.jar app.jar
 RUN useradd -m myuser
 USER myuser
 EXPOSE 8090
