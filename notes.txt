@@ -4,6 +4,8 @@ sudo bash ./mvnw spring-boot:run
 dockerize it
 https://vaadin.com/learn/tutorials/docker-container
 mvn install -Pproduction
+java -jar target/my-starter-project-1.0-SNAPSHOT.jar
+docker build -t vaadin-docker .
 
 dockerfile:
 FROM openjdk:11
@@ -17,3 +19,9 @@ CMD java -jar -Dspring.profiles.active=prod app.jar
 
 run docker image
 docker run -ti -p 8090:8080 vaadin-docker
+
+upgrage portainer:
+docker pull portainer/portainer
+docker stop portainer
+docker rm portainer
+docker run ... <your run parameters etc>
