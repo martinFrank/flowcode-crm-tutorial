@@ -4,7 +4,7 @@ sudo bash ./mvnw spring-boot:run
 dockerize it
 https://vaadin.com/learn/tutorials/docker-container
 mvn install -Pproduction
-java -jar target/my-starter-project-1.0-SNAPSHOT.jar
+java -jar target/flowcrmtutorial-1.0-SNAPSHOT.jar
 docker build -t vaadin-docker .
 
 dockerfile:
