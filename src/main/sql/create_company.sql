@@ -1,0 +1,6 @@
+USE crmflow;
+CREATE TABLE IF NOT EXISTS company (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(256)
+);
+
